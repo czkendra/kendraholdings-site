@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kendra Holdings | LandLens, wmassgas.com, wmassarbitrage.com</title>
-<meta name="description" content="Kendra Holdings is Collin Kendra’s company in Chicopee, Massachusetts. Live now: LandLens, wmassgas.com, and wmassarbitrage.com.">
+<title>Kendra Holdings</title>
+<meta name="description" content="Kendra Holdings is a private holding company in Chicopee, Massachusetts, and the maker of LandLens, Western Mass Gas Prices, and Western Mass Arbitrage.">
 <link rel="canonical" href="https://kendraholdings.io/">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0d0e0f">
@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://kendraholdings.io/">
 <meta property="og:site_name" content="Kendra Holdings">
 <meta property="og:title" content="Kendra Holdings">
-<meta property="og:description" content="Local data, made useful. Live now: LandLens, wmassgas.com, and wmassarbitrage.com.">
+<meta property="og:description" content="Kendra Holdings is a private holding company in Chicopee, Massachusetts, and the maker of LandLens, Western Mass Gas Prices, and Western Mass Arbitrage.">
 <meta property="og:image" content="https://kendraholdings.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -73,8 +73,8 @@ ul,ol{list-style:none;padding:0}
 .hero{align-items:center;padding-block:clamp(48px,8vh,96px) clamp(80px,12vh,136px)}
 .hero-copy{grid-column:1/span 6}
 h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.04em}
-.lede{margin-top:28px;max-width:31ch;font-size:clamp(1.125rem,1rem + .35vw,1.3125rem);line-height:1.45;color:var(--muted)}
-.lede a{color:var(--text);text-decoration-color:var(--line-hover);transition:text-decoration-color .2s}
+.lede{margin-top:28px;max-width:38ch;font-size:clamp(1.125rem,1rem + .35vw,1.3125rem);line-height:1.45;color:var(--muted)}
+.lede a{white-space:nowrap;color:var(--text);text-decoration-color:var(--line-hover);transition:text-decoration-color .2s}
 .lede a:is(:hover,:focus-visible){text-decoration-color:var(--accent)}
 .btn{display:inline-flex;align-items:center;height:48px;margin-top:36px;padding-inline:22px;background:var(--accent);color:var(--bg);font-weight:600;text-decoration:none;transition:background .2s,transform .2s var(--ease)}
 .btn:hover{background:var(--accent-hover)}
@@ -111,41 +111,33 @@ h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.
 .pair{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,64px);margin-top:clamp(96px,11vw,160px)}
 .pair .info{margin-top:28px}
 
-/* about */
+/* about + contact: label column, content column, first baselines aligned */
 .about,.contact,.foot{border-top:1px solid var(--line)}
-.about .grid{padding-block:clamp(96px,12vw,176px)}
-.bio{grid-column:1/span 6}
-.about h2{font-size:clamp(2.5rem,1.7rem + 2.6vw,4.25rem)}
-.title{margin-top:12px;font-family:var(--mono);font-size:.875rem;color:var(--muted)}
-.bio p + p{margin-top:20px}
-.title + p{margin-top:32px}
-.bio p:not(.title){max-width:44ch;font-size:1.125rem}
-.cv{grid-column:8/-1;align-self:end}
-.cv li{display:grid;grid-template-columns:6.5rem 1fr;column-gap:20px;padding-block:16px}
-.cv li + li{border-top:1px solid var(--line)}
-.yr{padding-top:3px;font-family:var(--mono);font-size:.8125rem;color:var(--muted);font-variant-numeric:tabular-nums}
-.what{display:block;font-size:.9375rem;color:var(--muted)}
-
-/* contact */
-.contact .wrap{padding-block:clamp(96px,13vw,200px)}
-.email{display:inline-block;font-size:clamp(1.5rem,.45rem + 5.6vw,6rem);font-weight:600;font-stretch:84%;letter-spacing:-.04em;line-height:1.05;text-decoration-thickness:.045em;text-underline-offset:.14em;text-decoration-color:var(--line-hover);transition:text-decoration-color .25s}
-.email:hover{text-decoration-color:var(--accent)}
-.where{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:28px;color:var(--muted)}
-.where a{color:var(--text);text-decoration-color:var(--line-hover)}
-.where a:hover{text-decoration-color:var(--accent)}
+.row{align-items:baseline;padding-block:clamp(64px,8vw,112px)}
+.label{grid-column:1/span 3;font-size:1rem;font-weight:500;font-stretch:100%;letter-spacing:0;line-height:1.4;color:var(--muted)}
+.body{grid-column:4/-1}
+.statement{max-width:36ch;font-size:clamp(1.375rem,1rem + 1.2vw,2.125rem);font-weight:500;line-height:1.25;letter-spacing:-.02em}
+.statement span{color:var(--muted)}
+.contacts{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px 32px}
+.contacts dt{font-family:var(--mono);font-size:.8125rem;color:var(--muted)}
+.contacts dd{margin-top:8px;font-size:clamp(1.0625rem,.95rem + .4vw,1.3125rem)}
+.contacts a,.foot a{text-decoration-color:var(--line-hover);transition:text-decoration-color .2s}
+.contacts a:hover,.foot a:hover{text-decoration-color:var(--accent)}
 .foot .wrap{display:flex;justify-content:space-between;gap:16px;padding-block:28px;font-size:.875rem;color:var(--muted)}
 
 @media (min-width:1024px){
   .pair > :last-child{margin-top:clamp(0px,9vw,150px)}
 }
 @media (max-width:1023px){
-  .hero-copy,.stack,.feature .frame,.feature .info,.bio,.cv{grid-column:1/-1}
+  .hero-copy,.stack,.feature .frame,.feature .info{grid-column:1/-1}
   .stack{max-width:720px;width:100%;margin-top:56px}
   .feature .info{margin-top:32px}
-  .cv{margin-top:48px}
+  .contacts{grid-template-columns:1fr}
 }
 @media (max-width:767px){
   .pair{grid-template-columns:1fr}
+  .label,.body{grid-column:1/-1}
+  .body{margin-top:20px}
 }
 @media (max-width:479px){
   .nav li:not(:last-child){display:none}
@@ -183,8 +175,8 @@ h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.
 <main id="main">
   <section class="hero wrap grid" aria-labelledby="hero-h">
     <div class="hero-copy">
-      <h1 id="hero-h">Local data, made useful.</h1>
-      <p class="lede">Kendra Holdings is Collin Kendra’s company in Chicopee, Massachusetts. Live now: <a href="#landlens" data-p="ll">LandLens</a>, <a href="#wmassgas" data-p="gas">wmassgas.com</a>, and <a href="#wmassarbitrage" data-p="arb">wmassarbitrage.com</a>.</p>
+      <h1 id="hero-h">We build and run software.</h1>
+      <p class="lede">Kendra Holdings is a private holding company in Chicopee, Massachusetts, and the maker of <a href="#landlens" data-p="ll">LandLens</a>, <a href="#wmassgas" data-p="gas">Western Mass Gas Prices</a>, and <a href="#wmassarbitrage" data-p="arb">Western Mass Arbitrage</a>.</p>
       <a class="btn" href="mailto:collin@kendraholdings.io">Email Collin</a>
     </div>
     <div class="stack" aria-hidden="true">
@@ -204,13 +196,13 @@ h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.
       </a>
       <div class="info">
         <h3>LandLens</h3>
-        <p>Verified student reviews, city inspection records, and court eviction filings for college rentals, combined into one grade before you sign a lease.</p>
+        <p>Grades college rentals using verified student reviews, city inspection records, and court eviction filings, so students and parents can check a place before signing a lease.</p>
         <dl class="facts">
           <div><dt>College rentals</dt><dd>70,000+</dd></div>
           <div><dt>States</dt><dd>18</dd></div>
           <div><dt>Launched</dt><dd>Sep 2026</dd></div>
         </dl>
-        <p>Built and run by Kendra Holdings. On iOS and Android.</p>
+        <p>Available on iOS, Android, and the web.</p>
         <a class="go" href="https://getlandlens.com">getlandlens.com<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </article>
@@ -223,7 +215,7 @@ h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.
         </a>
         <div class="info">
           <h3>Western Mass Gas Prices</h3>
-          <p>The cheapest pump prices in Western Massachusetts, sorted by town and fuel type. Free to use.</p>
+          <p>Current gas prices across Western Massachusetts, sorted by town and fuel grade. Free to use.</p>
           <dl class="facts">
             <div><dt>Towns</dt><dd>39</dd></div>
             <div><dt>Counties</dt><dd>4</dd></div>
@@ -240,9 +232,9 @@ h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.
         </a>
         <div class="info">
           <h3>Western Mass Arbitrage</h3>
-          <p>Finds underpriced products at stores near Chicopee, checks that they are in stock, and models the resale price.</p>
+          <p>Finds discounted products at nearby stores, confirms they are in stock, and estimates their resale value.</p>
           <dl class="facts">
-            <div><dt>Search radius</dt><dd>35 mi</dd></div>
+            <div><dt>Search radius</dt><dd>35 miles</dd></div>
             <div><dt>Launched</dt><dd>2026</dd></div>
           </dl>
           <a class="go" href="https://wmassarbitrage.com">wmassarbitrage.com<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -252,29 +244,20 @@ h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.
   </section>
 
   <section id="about" class="about" aria-labelledby="about-h">
-    <div class="wrap grid">
-      <div class="bio">
-        <h2 id="about-h">Collin Kendra</h2>
-        <p class="title">Principal, Kendra Holdings</p>
-        <p>I build products out of public records and local data, and I keep running them after launch.</p>
-        <p>I also work in technology operations at Radd Payment Solutions in Northampton, where I built the systems behind its payment operations: payout intake, reconciliation, accounting, and the client portal.</p>
-      </div>
-      <ol class="cv" aria-label="Experience">
-        <li><span class="yr">Since 2026</span><span>Kendra Holdings<span class="what">Principal</span></span></li>
-        <li><span class="yr">Since 2026</span><span>LandLens<span class="what">Co-founder</span></span></li>
-        <li><span class="yr">Since 2026</span><span>Radd Payment Solutions<span class="what">Technology operations</span></span></li>
-        <li><span class="yr">Since 2025</span><span>CNAX AI<span class="what">Co-founder</span></span></li>
-        <li><span class="yr">2023-2026</span><span>Sunpointe Investments<span class="what">Portfolio analysis</span></span></li>
-        <li><span class="yr">2025</span><span>Merrimack College<span class="what">BBA, Finance</span></span></li>
-      </ol>
+    <div class="wrap grid row">
+      <h2 id="about-h" class="label">About</h2>
+      <p class="body statement">Kendra Holdings was founded in 2026 by Collin Kendra, who builds and runs its products. <span>He is also a co-founder of LandLens and CNAX AI, a Tech Analyst at Radd Payment Solutions, and a Merrimack College graduate with a BBA in Finance.</span></p>
     </div>
   </section>
 
   <section id="contact" class="contact" aria-labelledby="contact-h">
-    <div class="wrap">
-      <h2 id="contact-h" class="sr-only">Contact</h2>
-      <a class="email" href="mailto:collin@kendraholdings.io">collin@kendraholdings.io</a>
-      <p class="where"><span>Chicopee, Massachusetts</span><a href="https://www.linkedin.com/in/ckend">LinkedIn</a></p>
+    <div class="wrap grid row">
+      <h2 id="contact-h" class="label">Contact</h2>
+      <dl class="body contacts">
+        <div><dt>Email</dt><dd><a href="mailto:collin@kendraholdings.io">collin@kendraholdings.io</a></dd></div>
+        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/ckend">linkedin.com/in/ckend</a></dd></div>
+        <div><dt>Location</dt><dd>Chicopee, Massachusetts</dd></div>
+      </dl>
     </div>
   </section>
 </main>
@@ -282,6 +265,7 @@ h1{font-size:clamp(3.5rem,1.9rem + 5vw,6.5rem);line-height:.92;letter-spacing:-.
 <footer class="foot">
   <div class="wrap">
     <span>© 2026 Kendra Holdings LLC</span>
+    <a href="#main">Back to top</a>
   </div>
 </footer>
 </body>
